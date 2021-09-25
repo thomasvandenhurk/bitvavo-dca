@@ -6,6 +6,7 @@ from dotenv import find_dotenv, load_dotenv
 
 from src.client import Client
 from src.strategy import additional_markets_in_report, strategy
+pd.options.mode.chained_assignment = None
 
 load_dotenv(find_dotenv())
 

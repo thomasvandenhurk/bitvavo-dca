@@ -133,3 +133,4 @@ dmypy.json
 # Project specific
 src/strategy.py
 portefeuille.xlsx
+*.bat
