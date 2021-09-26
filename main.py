@@ -20,8 +20,8 @@ def place_orders(client):
 
         # check if there are sufficient funds to make next iteration
         if float(amount_left) < 2 * amount_needed:
-            print('WARNING: A total of ' + amount_left + ' EUR is in your account, while ' + str(amount_needed) +
-                  ' EUR is needed the next time.')
+            print('WARNING: A total of ' + str(float(amount_left)-amount_needed) + ' EUR is in your account, while ' +
+                  str(amount_needed) + ' EUR is needed the next time.')
     else:
         print('Not enough funds to place all orders. None were placed.')
 
